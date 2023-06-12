@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;400;800&family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Neuton:wght@200;400;700&display=swap');
+
+
+$black: #41313c;
+$white: #ffffff;
+$pink: #FF00B8;
+$blue: #00FFF0;
+$green: #00FF47;
+$purple: #C600FF;
+$red: #FF0039;
+
+body {
+    color: $black;
+    font-family: 'Fira Sans';
+}
+
+a {
+    color: $black;
+    &:hover {
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+li {
+    list-style: none;
+}

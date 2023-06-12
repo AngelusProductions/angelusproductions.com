@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.scss'
+import homeTabs from './constants/homeTabs'
 
-function App() {
+const App = () => {
+  const [tabIndex, setTabIndex] = useState(1)
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main id="appContainer">
+      {homeTabs.map(tab => (
+        <section id={`homeTabFor${tab.name}`} clasName='homeContainer'>
+          {tab.name}
+        </section>
+      ))}
+    </main>
+  )
 }
 
-export default App;
+export default App
