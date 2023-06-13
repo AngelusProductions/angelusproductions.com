@@ -1,4 +1,4 @@
-export default {
+const linkTypes = {
     spotify: {
         id: 1,
         name: 'Spotify'
@@ -32,3 +32,5 @@ export default {
         name: 'SoundCloud'
     }
 }
+
+export default linkTypes

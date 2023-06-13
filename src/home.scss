@@ -1,0 +1,39 @@
+@import 'App';
+
+#homeBanner {
+    width: 100%;
+    border-bottom: 2px solid $blue;
+    box-shadow: 0px 0px 5px 3px $purple;
+}
+
+#imdbIcon img {
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+div#socialLinksContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+div#homeTabsHeadersContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+h1.tabName {
+    cursor: pointer;
+    font-size: 5vw;
+    color: $purple;
+}
+
+h1.tabName.selectedTab {
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 10px 0px 0px #FF00B8;
+}

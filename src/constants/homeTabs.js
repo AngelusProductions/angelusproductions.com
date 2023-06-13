@@ -1,6 +1,6 @@
 import linkTypes from './linkTypes'
 
-export default [
+const homeTabs = [
     {
         id: 1,
         name: 'Music',
@@ -210,7 +210,7 @@ export default [
                 linkType: linkTypes.youtube
             },
             {
-                id: 11,
+                id: 12,
                 name: "The Fact that He Leaves",
                 linkUrl: 'https://www.youtube.com/watch?v=VWlElNRlO94',
                 date: new Date('2011-04'),
@@ -252,13 +252,15 @@ export default [
             },
             {
                 id: 4,
-                name: 'Civitas Networks',
-                linkUrl: 'https://civitasnetworks.com/',
+                name: "DalmaDaniela.com",
+                linkUrl: 'https://dalmadaniela.com/',
                 codeUrl: null,
                 imageUrl: '',
-                description: 'The website for an emerging leader in 5G technology.',
-                date: new Date('2021-05')
+                description: "My wife's personal website!",
+                date: new Date('2023-05')
             },
         ]
     }
 ]
+
+export default homeTabs
