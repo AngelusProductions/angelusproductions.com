@@ -30,6 +30,10 @@ const linkTypes = {
     soundcloud: {
         id: 8,
         name: 'SoundCloud'
+    },
+    github: {
+        id: 9,
+        name: 'GitHub'
     }
 }
 
