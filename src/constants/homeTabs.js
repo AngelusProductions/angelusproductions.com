@@ -60,7 +60,7 @@ const homeTabs = [
                 name: 'All I Want for Christmas is You (@ngelus mix)',
                 artist: 'Dalma',
                 date: new Date('2021-12'),
-                url: 'https://soundcloud.com/coreyangelus/i-wonder',
+                url: 'https://www.instagram.com/reel/CmnHyBsq2L-/',
                 videoUrl: null,
                 description: "2021 Cover of 'All I Want for Christmas is You'.",
                 type: linkTypes.instagram
@@ -112,7 +112,7 @@ const homeTabs = [
                 date: new Date('2023-02'),
                 url: 'https://youtube.com/shorts/xJKzaTgfrVc?feature=share',
                 videoUrl: null,
-                description: "Who wans to party on Mars??",
+                description: "Who wants to party on Mars??",
                 type: linkTypes.youtube
             },
         ]
@@ -127,7 +127,7 @@ const homeTabs = [
                 url: 'https://youtu.be/XWY1qSwm6vI',
                 date: new Date('2023-06'),
                 description: 'My acting reel as of 2023!',
-                type: linkTypes.imdb
+                type: linkTypes.youtube
             },
             {
                 id: 2,
@@ -228,40 +228,95 @@ const homeTabs = [
                 name: 'Practice Makes',
                 url: 'https://practice-makes.netlify.app',
                 codeUrl: 'https://github.com/AngelusProductions/practice-makes',
-                imageUrl: '',
                 type: linkTypes.github,
                 description: 'Website for "Practice Makes" monthly design meetup @ Intrepid Pursuits using Gatsby.js',
-                date: new Date('2020-02')
+                date: new Date('2020-02'),
+                screenshots: [
+                    {
+                        id: 1,
+                        name: 'Welcome',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/practice-makes/practiceMakes1.PNG'
+                    },
+                    {
+                        id: 2,
+                        name: 'Events',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/practice-makes/practiceMakes2.PNG'
+                    },
+                    {
+                        id: 3,
+                        name: 'Archives',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/practice-makes/practiceMakes3.PNG'
+                    },
+                    {
+                        id: 4,
+                        name: 'About',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/practice-makes/practiceMakes4.PNG'
+                    },
+                    {
+                        id: 5,
+                        name: 'Team',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/practice-makes/practiceMakes5.PNG'
+                    },
+                    {
+                        id: 6,
+                        name: 'Contact',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/practice-makes/practiceMakes6.PNG'
+                    },
+                ]
             },
             {
                 id: 2,
+                name: 'Planted',
+                url: null,
+                codeUrl: 'https://github.com/AngelusProductions/planted',
+                type: linkTypes.github,
+                description: 'Browse plants and fill your garden up with all the green friends you desire.',
+                date: new Date('2019-11')
+            },
+            {
+                id: 3,
+                name: 'National Primate Research Centers',
+                url: 'bit.ly/nprc-home',
+                codeUrl: null,
+                type: linkTypes.github,
+                description: 'An biomedical research website for non-human primate research at universities across the USA.',
+                date: new Date('2023-07')
+            },
+            {
+                id: 4,
+                name: 'VIP (Video Intelligence Platform)',
+                url: null,
+                codeUrl: null,
+                type: linkTypes.github,
+                description: 'Lemonlight Media\'s video production coordination system.',
+                date: new Date('2022-11')
+            },
+            {
+                id: 5,
+                name: 'Orthopedic Research Dashboard',
+                url: null,
+                codeUrl: null,
+                type: linkTypes.github,
+                description: 'An orthopedic researcher\'s x-ray review dashboard.',
+                date: new Date('2020-04')
+            },
+            {
+                id: 6,
                 name: 'Voyage of the Yellow Wellies',
                 url: 'https://voyageoftheyellowwellies.netlify.app',
                 codeUrl: 'https://github.com/AngelusProductions/Voyage-Of-The-Yellow-Wellies',
-                imageUrl: '',
                 type: linkTypes.github,
                 description: 'Voyage of the Yellow Wellies is a personal journey of river exploration that encourages participation by putting viewers into a canoe with three different canoeists.',
                 date: new Date('2020-03')
             },
             {
-                id: 3,
+                id: 7,
                 name: 'Civitas Networks',
                 url: 'https://civitasnetworks.com/',
-                codeUrl: null,
-                imageUrl: '',
+                codeUrl: 'https://github.com/AngelusProductions/civitas-networks',
                 type: linkTypes.github,
                 description: 'Website for an emerging leader in 5G technology.',
                 date: new Date('2020-03')
-            },
-            {
-                id: 4,
-                name: "DalmaDaniela.com",
-                url: 'https://dalmadaniela.com/',
-                codeUrl: null,
-                imageUrl: '',
-                type: linkTypes.github,
-                description: "My wife's personal website!",
-                date: new Date('2023-05')
             },
         ]
     }
