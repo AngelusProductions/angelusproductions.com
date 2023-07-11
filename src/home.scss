@@ -23,6 +23,7 @@ div#homeTabsHeadersContainer {
     justify-content: space-around;
     align-items: center;
     height: 80px;
+    margin: 50px;
 }
 
 h1.tabName {
@@ -36,4 +37,41 @@ h1.tabName.selectedTab {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 8px 10px 0px 0px #FF00B8;
+}
+
+#homeTabForMusic,
+#homeTabForActing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#homeTabForMusic {
+    .linkContainer {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+#homeTabForWeb {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 10vw;
+
+    .githubScreenshotImage {
+        object-fit: cover;
+    }
+
+    .githubUrls {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-around;
+    }
 }

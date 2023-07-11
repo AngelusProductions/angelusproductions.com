@@ -155,7 +155,7 @@ const homeTabs = [
             },
             {
                 id: 5,
-                name: 'Jonhnny & Amber',
+                name: 'Johnny & Amber',
                 url: 'https://www.instagram.com/p/Cdgj7k4A8Ey/',
                 date: new Date('2022-05'),
                 description: "A poo has many names.",
@@ -262,6 +262,11 @@ const homeTabs = [
                         name: 'Contact',
                         url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/practice-makes/practiceMakes6.PNG'
                     },
+                    {
+                        id: 7,
+                        name: 'Home',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/practice-makes/practiceMakes7.png'
+                    },
                 ]
             },
             {
@@ -271,7 +276,54 @@ const homeTabs = [
                 codeUrl: 'https://github.com/AngelusProductions/planted',
                 type: linkTypes.github,
                 description: 'Browse plants and fill your garden up with all the green friends you desire.',
-                date: new Date('2019-11')
+                date: new Date('2019-11'),
+                screenshots: [
+                    {
+                        id: 1,
+                        name: 'Home',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/planted/plantedHome.png'
+                    },
+                    {
+                        id: 2,
+                        name: 'Explore',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/planted/plantedExploreDropdown.png'
+                    },
+                    {
+                        id: 3,
+                        name: 'Google OAuth',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/planted/plantedOAuth.png'
+                    },
+                    {
+                        id: 4,
+                        name: 'Add to Wishlist',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/planted/plantedWishlist.png'
+                    },
+                    {
+                        id: 5,
+                        name: 'Instructions',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/planted/plantedPlantInstructions.png'
+                    },
+                    {
+                        id: 6,
+                        name: 'Name Your Nook',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/planted/plantedAddNook1.png'
+                    },
+                    {
+                        id: 7,
+                        name: 'Add Plants to Nook',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/planted/plantedAddNook2.png'
+                    },
+                    {
+                        id: 8,
+                        name: 'Your New Nook',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/planted/plantedNewNook.png'
+                    },
+                    {
+                        id: 9,
+                        name: 'Search for Plants',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/planted/plantedSearch.png'
+                    },
+                ]
             },
             {
                 id: 3,
@@ -280,7 +332,84 @@ const homeTabs = [
                 codeUrl: null,
                 type: linkTypes.github,
                 description: 'An biomedical research website for non-human primate research at universities across the USA.',
-                date: new Date('2023-07')
+                date: new Date('2023-07'),
+                screenshots: [
+                    {
+                        id: 1,
+                        name: 'National Primate Research Centers 1',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch1.PNG'
+                    },
+                    {
+                        id: 2,
+                        name: 'National Primate Research Centers 2',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch2.PNG'
+                    },
+                    {
+                        id: 3,
+                        name: 'National Primate Research Centers 3',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch3.PNG'
+                    },
+                    {
+                        id: 4,
+                        name: 'National Primate Research Centers 4',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch4.PNG'
+                    },
+                    {
+                        id: 5,
+                        name: 'National Primate Research Centers 5',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch5.PNG'
+                    },
+                    {
+                        id: 6,
+                        name: 'National Primate Research Centers 6',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch6.PNG'
+                    },
+                    {
+                        id: 7,
+                        name: 'National Primate Research Centers 7',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch7.PNG'
+                    },
+                    {
+                        id: 8,
+                        name: 'National Primate Research Centers 8',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch8.PNG'
+                    },
+                    {
+                        id: 9,
+                        name: 'National Primate Research Centers 9',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch9.PNG'
+                    },
+                    {
+                        id: 10,
+                        name: 'National Primate Research Centers 10',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch10.PNG'
+                    },
+                    {
+                        id: 11,
+                        name: 'National Primate Research Centers 11',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch11.PNG'
+                    },
+                    {
+                        id: 12,
+                        name: 'National Primate Research Centers 12',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch12.PNG'
+                    },
+                    {
+                        id: 13,
+                        name: 'National Primate Research Centers 13',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch13.PNG'
+                    },
+                    {
+                        id: 14,
+                        name: 'National Primate Research Centers 14',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch14.PNG'
+                    },
+                    {
+                        id: 15,
+                        name: 'National Primate Research Centers 15',
+                        url: 'https://s3.us-west-1.amazonaws.com/angelusproductions.com/nhprc/nhprcResearch15.PNG'
+                    },
+                ]
             },
             {
                 id: 4,
@@ -289,7 +418,94 @@ const homeTabs = [
                 codeUrl: null,
                 type: linkTypes.github,
                 description: 'Lemonlight Media\'s video production coordination system.',
-                date: new Date('2022-11')
+                date: new Date('2022-11'),
+                screenshots: [
+                    {
+                        id: 1,
+                        name: "New Contract",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/newContract.svg"
+                    },
+                    {
+                        id: 2,
+                        name: "Add Company POC",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/addCompanyPOC.svg"
+                    },
+                    {
+                        id: 3,
+                        name: "Add Partner",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/addPartner.svg"
+                    },
+                    {
+                        id: 4,
+                        name: "Add Partner POC",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/addPartnerPOC.svg"
+                    },
+                    {
+                        id: 5,
+                        name: "Cancel",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/cancel.svg"
+                    },
+                    {
+                        id: 6,
+                        name: "Contract Checkout",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/contractCheckout.svg"
+                    },
+                    {
+                        id: 7,
+                        name: "Contract Details",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/contractDetails.svg"
+                    },
+                    {
+                        id: 8,
+                        name: "Cutdown",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/cutdown.svg"
+                    },
+                    {
+                        id: 9,
+                        name: "Hero Video 1",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/heroVideo1.svg"
+                    },
+                    {
+                        id: 10,
+                        name: "Hero Video 2",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/heroVideo2.svg"
+                    },
+                    {
+                        id: 11,
+                        name: "Add Company",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/addCompany.svg"
+                    },
+                    {
+                        id: 12,
+                        name: "Production  Day",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/productionDay.svg"
+                    },
+                    {
+                        id: 13,
+                        name: "Project Files",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/projectFiles.svg"
+                    },
+                    {
+                        id: 14,
+                        name: "Project Select 1",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/projectSelect1.svg"
+                    },
+                    {
+                        id: 15,
+                        name: "Project Select 2",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/projectSelect2.svg"
+                    },
+                    {
+                        id: 16,
+                        name: "Sales Dashboard 1",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/salesDashboard1.svg"
+                    },
+                    {
+                        id: 17,
+                        name: "Sales Dashboard 2",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/vip/salesDashboard2.svg"
+                    }
+                ]
             },
             {
                 id: 5,
@@ -298,7 +514,19 @@ const homeTabs = [
                 codeUrl: null,
                 type: linkTypes.github,
                 description: 'An orthopedic researcher\'s x-ray review dashboard.',
-                date: new Date('2020-04')
+                date: new Date('2020-04'),
+                screenshots: [
+                    {
+                        id: 1,
+                        name: "Knee Research Dashboard Screenshot",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/x-ray-research/Knee+Research+Dashboard+Screenshot.jpg"
+                    },
+                    {
+                        id: 2,
+                        name: "Knee Research Rejected Screenshot",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/x-ray-research/Knee+Research+Rejected+Screenshot.HEIC"
+                    }
+                ]
             },
             {
                 id: 6,
@@ -307,7 +535,19 @@ const homeTabs = [
                 codeUrl: 'https://github.com/AngelusProductions/Voyage-Of-The-Yellow-Wellies',
                 type: linkTypes.github,
                 description: 'Voyage of the Yellow Wellies is a personal journey of river exploration that encourages participation by putting viewers into a canoe with three different canoeists.',
-                date: new Date('2020-03')
+                date: new Date('2020-03'),
+                screenshots: [
+                    {
+                        id: 1,
+                        name: "Yellow Wellies Landing",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/yellow-wellies/yellowWellies1.png"
+                    },
+                    {
+                        id: 2,
+                        name: "Yellow Wellies Modal",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/yellow-wellies/yellowWellies2.png"
+                    }
+                ]
             },
             {
                 id: 7,
@@ -316,7 +556,44 @@ const homeTabs = [
                 codeUrl: 'https://github.com/AngelusProductions/civitas-networks',
                 type: linkTypes.github,
                 description: 'Website for an emerging leader in 5G technology.',
-                date: new Date('2020-03')
+                date: new Date('2020-03'),
+                screenshots: [
+                    {
+                        id: 1,
+                        name: "Civitas 1",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/civitas-networks/civitas1.PNG"
+                    },
+                    {
+                        id: 2,
+                        name: "Civitas 2",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/civitas-networks/civitas2.PNG"
+                    },
+                    {
+                        id: 3,
+                        name: "Civitas 3",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/civitas-networks/civitas3.PNG"
+                    },
+                    {
+                        id: 4,
+                        name: "Civitas 4",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/civitas-networks/civitas4.PNG"
+                    },
+                    {
+                        id: 5,
+                        name: "Civitas 5",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/civitas-networks/civitas5.PNG"
+                    },
+                    {
+                        id: 6,
+                        name: "Civitas 6",
+                        url: "https://s3.us-west-1.amazonaws.com/angelusproductions.com/civitas-networks/civitas6.PNG"
+                    },
+                    {
+                        id: 7,
+                        "name": "Civitas 7",
+                        "url": "https://s3.us-west-1.amazonaws.com/angelusproductions.com/civitas-networks/civitas7.PNG"
+                    }
+                ]
             },
         ]
     }

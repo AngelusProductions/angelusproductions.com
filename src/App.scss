@@ -4,8 +4,10 @@ $black: #41313c;
 $white: #ffffff;
 $pink: #FF00B8;
 $blue: #00FFF0;
+$blue: #00FFF0;
 $green: #00FF47;
 $purple: #5a20b1;
+$indigo: #e3d3ff;
 $red: #FF0039;
 
 * {
@@ -16,6 +18,7 @@ body {
     color: $black;
     font-family: 'Fira Sans';
     margin: 0;
+    background: $indigo;
 }
 
 a {
