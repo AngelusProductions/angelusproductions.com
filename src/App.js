@@ -1,46 +1,81 @@
-import { useState } from 'react'
-import { SocialIcon } from 'react-social-icons'
+import React, { useState } from 'react'
 
-import LinkContainer from './components/LinkCointainer'
-import homeTabs from './constants/homeTabs'
-import socialLinks from './constants/socialLinks'
-import angelusBanner from './images/@ngelusBanner.gif'
-import imdbIcon from './images/imdbIcon.png'  
+import i from './constants/assets'
+
 import './App.scss'
 import './home.scss'
 
 const App = () => {
-  const [selectedTabId, setSelectedTabId] = useState(1)
+  const [contactForm, setContactForm] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setContactForm({ ...contactForm, [name]: value });
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Email sent successfully!');
+        // Clear the form
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
+      } else {
+        alert('Email could not be sent. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
 
   return (
-    <main id="appContainer">
-      <img id='homeBanner' alt='@ngelus logo' src={angelusBanner} />
-      <div id='socialLinksContainer'>
-        <a id="imdbIcon" className='interactable' href='https://www.imdb.com/name/nm13927757/'>
-          <img src={imdbIcon} alt='imdbIcon' />
-        </a>
-        {socialLinks.map(socialLink => (
-          <SocialIcon url={socialLink} key={socialLink} className='socialLink interactable' />
-        ))}
+    <main id='appContainer'>
+      <img id='angelusProductionsLogo' src={i.logos.angelusProductionsLogo} alt='Angelus Productions Logo' />
+      <div id='servicesContainer'>
+        <img className='service clickable' src={i.images.softwareDevelopment} alt='Software Development' />
+        <img className='service clickable' src={i.images.musicProduction} alt='Music Production' />
+        <img className='service clickable' src={i.images.audioVisualServices} alt='Audiovisual Services' />
       </div>
-      <div id='homeTabsHeadersContainer'>
-        {homeTabs.map(tab => (
-          <h1
-            key={tab.id}
-            className={`tabName interactable ${selectedTabId === tab.id ? 'selectedTab' : 'unselectedTab'}`}
-            onClick={() => setSelectedTabId(tab.id)}
-          >
-            {tab.name}
-          </h1>
-        ))}
-      </div>
-      <div id='homeTabsContainer'>
-        {homeTabs.map(tab => (
-          <section id={`homeTabFor${tab.name}`} key={tab.id} className='homeContainer'>
-            {selectedTabId === tab.id && tab.links.map(link => <LinkContainer link={link} key={link.id} />)}
-          </section>
-        ))}
-      </div>
+
+       <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={contactForm.name}
+          onChange={handleInputChange}
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={contactForm.email}
+          onChange={handleInputChange}
+        />
+        <textarea
+          name="message"
+          placeholder="Message"
+          value={contactForm.message}
+          onChange={handleInputChange}
+        />
+        <button type="submit">Submit</button>
+    </form>
     </main>
   )
 }

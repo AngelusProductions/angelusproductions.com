@@ -1,9 +1,61 @@
 @import 'App';
 
-#homeBanner {
-    width: 100%;
-    border-bottom: 2px solid $blue;
-    box-shadow: 0px 0px 5px 3px $purple;
+main#appContainer {
+    min-height: 100vh;
+    
+    img#angelusProductionsLogo {
+        position: absolute;
+        top: -22vw;
+        left: 17vw;
+        width: 70vw;
+        animation: slow-bounce 1.5s ease-in-out infinite 0s;
+    }
+    
+    div#servicesContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        
+        img.service {
+            width: 30%;
+
+            &:nth-of-type(1) {
+                animation: cloud-hover 4s ease-in-out infinite 0s;
+            }
+            &:nth-of-type(2) {
+                animation: cloud-hover 4s ease-in-out infinite 1s;
+            }
+            &:nth-of-type(3) {
+                animation: cloud-hover 4s ease-in-out infinite 2s;
+            }
+        }
+    }
+}
+
+@keyframes cloud-hover {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes slow-bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    90% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 #imdbIcon img {
@@ -29,7 +81,6 @@ div#homeTabsHeadersContainer {
 h1.tabName {
     cursor: pointer;
     font-size: 5vw;
-    color: $purple;
 }
 
 h1.tabName.selectedTab {
