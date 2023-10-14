@@ -1,0 +1,15 @@
+@import '../colors.scss';
+
+@media (max-width: 640px) {
+    main#appContainer {
+        div#servicesContainer {
+            flex-direction: column;
+            margin-top: 55vw;
+            height: calc(100vh - 55vw);
+                
+            img.service {
+                width: 100%;
+            }
+        }
+    }
+}

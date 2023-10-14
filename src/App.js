@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 
 import i from './constants/assets'
 
-import './App.scss'
-import './home.scss'
+import './index.scss'
+import './styles/index.scss'
 
 const App = () => {
   const [contactForm, setContactForm] = useState({
@@ -18,31 +18,30 @@ const App = () => {
   }
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
     try {
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
-      });
+        body: JSON.stringify(contactForm),
+      })
 
       if (response.ok) {
-        alert('Email sent successfully!');
-        // Clear the form
-        setFormData({
+        alert('Email sent successfully!')
+        setContactForm({
           name: '',
           email: '',
           message: '',
         });
       } else {
-        alert('Email could not be sent. Please try again later.');
+        alert('Email could not be sent. Please try again later.')
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error:', error)
     }
-  };
+  }
 
   return (
     <main id='appContainer'>
