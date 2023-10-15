@@ -1,0 +1,19 @@
+@import '../../colors.scss';
+
+@media (max-width: 640px) {
+    main#homeContainer {
+        img#angelusProductionsLogo {
+            width: 100%;
+            height: auto;
+        }
+        div#servicesContainer {
+            flex-direction: column;
+            height: calc(100vh - 55vw);
+            margin-top: 15%;
+                
+            img.service {
+                width: 80%;
+            }
+        }
+    }
+}

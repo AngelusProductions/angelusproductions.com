@@ -1,0 +1,50 @@
+@import '../../../colors.scss';
+
+@media (max-width: 640px) {
+    main#contactFormContainer {
+        margin-top: 15%;
+        
+        h1#contactFormTitle {
+            font-size: 9vw;
+            margin-bottom: 5%;
+        }
+
+        div#contactFormFormContainer {
+            section {
+                width: 80%;
+
+                .contactFormGroup {
+                    label {
+                        font-size: 5vw;
+                        margin-bottom: 5%;
+                    }
+                    input {
+                        font-size: 4.5vw;
+                    }
+                    textarea {
+                        font-size: 4.5vw;
+                    }
+                }
+                button {
+                    font-size: 7vw;
+                }
+
+                p {
+                    font-size: 4vw;
+                }
+            }
+
+            div#thankYouContainer {
+                font-size: 3vw;
+                margin-top: 5%;
+                color: $pink;
+                font-style: italic;
+            }
+            svg#contactFormResetButton {
+                height: 6vw;
+                color: $pink;
+                cursor: pointer;
+            }
+        }
+    }
+}

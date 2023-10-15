@@ -1,0 +1,48 @@
+@import '../../../colors.scss';
+
+@media (min-width: 1024px) {
+    main#contactFormContainer {
+        
+        h1#contactFormTitle {
+            font-size: 3vw;
+        }
+
+        div#contactFormFormContainer {
+            section {
+                width: 33%;
+
+                .contactFormGroup {
+                    margin-bottom: 1%;
+                    label {
+                        font-size: 2vw;
+                        margin-bottom: 1%;
+                    }
+                    input {
+                        font-size: 1.5vw;
+                    }
+                    textarea {
+                        font-size: 1.5vw;
+                        margin-bottom: 1%;
+                    }
+                }
+                button {
+                    font-size: 2vw;
+                }
+
+                p {
+                    font-size: 1.5vw;
+                }
+            }
+            #contactFormThankYou {
+                div#thankYouContainer {
+                    font-size: 2vw;
+                    margin-top: 5%;
+                    font-style: italic;
+                }
+                svg#contactFormResetButton {
+                    height: 3vw;
+                }
+            }
+        }
+    }
+}

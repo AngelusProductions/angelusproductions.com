@@ -1,0 +1,103 @@
+@import '../../../colors.scss';
+
+main#contactFormContainer {
+    font-family: 'Fira Sans';
+    width: 100%;
+
+    h1#contactFormTitle {
+        font-size: 4vw;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    div#contactFormFormContainer {
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        margin-bottom: 10%;
+
+        section {
+            display: flex;
+            flex-direction: column;
+            height: 90%;
+            width: 50%;
+
+            .contactFormGroup {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5%;
+                label {
+                    font-size: 2vw;
+                    margin-bottom: 2%;
+                }
+                input {
+                    border: 1px solid $pink;
+                    border-radius: 15px;
+                    height: 5vh;
+                    padding-left: 2%;
+                    font-family: 'Fira Sans';
+                    font-size: 1.5vw;
+                    color: $indigo;
+                }
+                textarea {
+                    border: 1px solid $pink;
+                    border-radius: 15px;
+                    height: 20vh;
+                    padding-left: 2%;
+                    font-family: 'Fira Sans';
+                    font-size: 1.5vw;
+                    color: $indigo;
+                }
+            }
+            button {
+                cursor: pointer;
+                border: 1px solid $black;
+                border-radius: 15px;
+                padding: 2.5%;
+                font-size: 1.5vw;
+                background-color: $cyan;
+                color: $pink;
+                font-weight: bold;  
+                font-size: 3vw;
+                width: 50%;
+                margin: auto;
+                font-family: "Fira Sans Condensed";
+                font-weight: bold;
+
+                &:hover {
+                    background-color: $white;
+                    color: $black;
+                }
+            }
+
+            p {
+                margin: auto;
+                color: $pink;
+                font-size: 3vw;
+                margin-top: 5%;
+                font-weight: bold;
+                font-style: italic;
+            }
+        }
+        
+        #contactFormThankYou {
+            div#thankYouContainer {
+                font-size: 3vw;
+                margin-top: 5%;
+                color: $pink;
+                font-style: italic;
+            }
+            svg#contactFormResetButton {
+                height: 6vw;
+                color: $pink;
+                cursor: pointer;
+            }
+        }
+
+        img {
+            width: 33vw;
+            height: 33vw;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import '../../colors.scss';
+
+main#homeContainer {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img#angelusProductionsLogo {
+        height: 33vh;
+        animation: angel-fly 1.5s ease-in-out infinite 0s;
+    }
+
+    div#servicesContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 33vh;
+
+        img.service {
+            width: 30%;
+            cursor: pointer;
+
+            &:nth-of-type(1) {
+                animation: cloud-hover 4s ease-in-out infinite 0s;
+                &:hover {
+                    animation: cloud-hover-hover 4s ease-in-out infinite 0s;                
+                }
+                &:active {
+                    animation: cloud-hover-active 4s ease-in-out infinite 0s;
+                }
+            }
+
+            &:nth-of-type(2) {
+                animation: cloud-hover 4s ease-in-out infinite 1s;
+                &:hover {
+                    animation: cloud-hover-hover 4s ease-in-out infinite 1s;
+                }
+                &:active {
+                    animation: cloud-hover-active 4s ease-in-out infinite 1s;
+                }
+            }
+
+            &:nth-of-type(3) {
+                animation: cloud-hover 4s ease-in-out infinite 2s;
+                &:hover {
+                    animation: cloud-hover-hover 4s ease-in-out infinite 2s;
+                }
+                &:active {
+                    animation: cloud-hover-active 4s ease-in-out infinite 2s;
+                }
+            }
+        }
+    }
+}
+
+@keyframes cloud-hover {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes cloud-hover-hover {
+    0%, 100% {
+        transform: translateY(0) scale(1.05);
+    }
+
+    50% {
+        transform: translateY(-50px) scale(1.05);
+    }
+}
+
+@keyframes cloud-hover-active {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(0.9);
+    }
+
+    50% {
+        transform: translateY(-50px) scale(0.9);
+    }
+}
+
+@keyframes angel-fly {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    90% {
+        transform: translateY(10px);
+    }
+}
