@@ -6,6 +6,57 @@ main#homeContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    .blackdrop {
+        height:100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: #00ffeba3;
+        z-index: 98;
+    }
+
+    div#homePopUpContainer {
+        width: 50vw;
+        height: fit-content;
+        position: absolute;
+        z-index: 99;
+        background: linear-gradient(120deg, $pink 0%, $indigo 100%);
+        top: 10vh;
+        border-radius: 50px;
+        box-shadow: inset 0px 0px 10px 1px $indigo;
+        border: 2px solid $cyan;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        box-sizing: border-box;
+
+        h1#homePopUpTitle {
+            margin-top: 10%;
+            font-size: 2.5vw;
+            text-align: center;
+        }
+
+        div#homePopUpBody {
+            font-size: 1.3vw;
+            color: black;
+            font-weight: bolder;
+            margin-bottom: 10%;
+        }
+
+        div#homePopUpCloseButton {
+            text-align: right;
+            top: -3%;
+            right: -3%;
+            position: absolute;
+
+            svg {
+                height: 2vw;
+                cursor: pointer;
+            }
+        }
+    }
 
     img#angelusProductionsLogo {
         height: 33vh;
@@ -17,6 +68,7 @@ main#homeContainer {
         justify-content: space-between;
         align-items: center;
         height: 33vh;
+        margin-bottom: 5%;
 
         img.service {
             width: 30%;

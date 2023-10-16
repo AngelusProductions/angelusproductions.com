@@ -2,6 +2,23 @@
 
 @media (max-width: 640px) {
     main#homeContainer {
+        div#homePopUpContainer {
+            width: 75vw;
+
+            h1#homePopUpTitle {
+                font-size: 4vw;
+            }
+
+            div#homePopUpBody {
+                font-size: 3vw;
+            }
+
+            div#homePopUpCloseButton {
+                svg {
+                    height: 5vw;
+                }
+            }
+        }
         img#angelusProductionsLogo {
             width: 100%;
             height: auto;
@@ -10,6 +27,7 @@
             flex-direction: column;
             height: calc(100vh - 55vw);
             margin-top: 15%;
+            margin-bottom: 33%;
                 
             img.service {
                 width: 80%;

@@ -2,6 +2,22 @@
 
 @media (min-width: 640px) and  (max-width: 1024px) {
     main#homeContainer {
+        div#homePopUpContainer {
+            width: 50vw;
 
+            h1#homePopUpTitle {
+                font-size: 2.5vw;
+            }
+
+            div#homePopUpBody {
+                font-size: 2.1vw;
+            }
+
+            div#homePopUpCloseButton {
+                svg {
+                    height: 3vw;
+                }
+            }
+        }
     }
 }
